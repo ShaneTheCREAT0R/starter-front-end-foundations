@@ -4,6 +4,10 @@ main {
   padding: 20px 0;
 }
 
+img {
+  width: 100%;
+}
+
 section {
   margin-bottom: 100px;
 }
@@ -26,7 +30,8 @@ h3 {
 
 .group {
   display: flex;
-  flex-direction: row 
+  flex-direction: column;
+  margin-bottom: 100px;
 }
 
 .item {
@@ -37,6 +42,20 @@ h3 {
 .item-double {
   flex: 2;
 }
+
+/* Groups and items (Desktop) */
+
+@media all and (min-width: 800px) {
+  section,
+  h1 {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
+
 
 p {
   font-size: 14px;
